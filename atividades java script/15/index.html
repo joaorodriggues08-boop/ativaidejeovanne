@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="start()">Iniciar</button>
+<button onclick="pause()">Pausar</button>
+<button onclick="reset()">Resetar</button>
+<p id="tempo">0</p>
+
+<script>
+let t=0, i;
+
+function start(){
+i=setInterval(()=>{tempo.innerText=++t},1000);
+}
+
+function pause(){
+clearInterval(i);
+}
+
+function reset(){
+t=0;
+tempo.innerText=0;
+}
+</script>
+</body>
+</html>

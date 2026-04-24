@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<textarea id="txt"></textarea>
+<button onclick="ver()">Analisar</button>
+<p id="res"></p>
+
+<script>
+function ver(){
+let t=txt.value;
+let maius=(t.match(/[A-Z]/g)||[]).length;
+res.innerText=`Caracteres:${t.length} Palavras:${t.split(" ").length} Maiúsculas:${maius}`;
+}
+</script>
+</body>
+</html>

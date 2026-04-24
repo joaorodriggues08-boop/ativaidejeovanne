@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="num">
+<button onclick="start()">Iniciar</button>
+<p id="res"></p>
+
+<script>
+function start(){
+let i=num.value;
+let t=setInterval(()=>{
+res.innerText=i;
+i--;
+if(i<0)clearInterval(t);
+},1000);
+}
+</script>
+</body>
+</html>

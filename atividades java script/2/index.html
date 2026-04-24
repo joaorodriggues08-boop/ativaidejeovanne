@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="num">
+<select id="op">
+<option value="+">Soma</option>
+<option value="-">Subtração</option>
+<option value="*">Multiplicação</option>
+<option value="/">Divisão</option>
+</select>
+<button onclick="calc()">Send</button>
+<pre id="res"></pre>
+
+<script>
+function calc(){
+let n=num.value;
+let op=op.value;
+let r="";
+for(let i=0;i<=10;i++){
+r+=`${n} ${op} ${i} = ${eval(n+op+i)}\n`;
+}
+res.textContent=r;
+}
+</script>
+</body>
+</html>

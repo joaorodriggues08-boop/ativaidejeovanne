@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="idade">
+<button onclick="ver()">Ver</button>
+<p id="res"></p>
+
+<script>
+function ver(){
+let i=idade.value;
+if(i<12)res.innerText="Criança";
+else if(i<18)res.innerText="Adolescente";
+else if(i<60)res.innerText="Adulto";
+else res.innerText="Idoso";
+}
+</script>
+</body>
+</html>

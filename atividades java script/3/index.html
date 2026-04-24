@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="peso" placeholder="Peso">
+<input id="altura" placeholder="Altura">
+<button onclick="imc()">Calcular</button>
+<p id="res"></p>
+
+<script>
+function imc(){
+let p=peso.value;
+let a=altura.value;
+let i=p/(a*a);
+
+let t="";
+if(i<18.5)t="Abaixo do peso";
+else if(i<25)t="Normal";
+else if(i<30)t="Sobrepeso";
+else t="Obesidade";
+
+res.innerText=i.toFixed(2)+" - "+t;
+}
+</script>
+</body>
+</html>

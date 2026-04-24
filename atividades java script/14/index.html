@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="valor">
+<button onclick="calc()">Calcular</button>
+<p id="res"></p>
+
+<script>
+function calc(){
+let v=valor.value;
+let d=0;
+if(v>100 && v<=500)d=0.1;
+else if(v>500)d=0.2;
+res.innerText=v-(v*d);
+}
+</script>
+</body>
+</html>
